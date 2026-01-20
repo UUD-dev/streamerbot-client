@@ -295,7 +295,7 @@ function displayTwitchChatMessage(data) {
 	}
 
 	chatBox.scrollTop = chatBox.scrollHeight;
-	deleteMessage(messageId, 1)
+	deleteMessage(messageId, 60)
 
 }
 
@@ -326,7 +326,7 @@ function displayYoutubeChatMessage(data) {
 	}
 
 	chatBox.scrollTop = chatBox.scrollHeight;
-	deleteMessage(messageId, 1)
+	deleteMessage(messageId, 60)
 
 }
 
@@ -361,7 +361,7 @@ function deleteMessage(msgId, timeout){
 						msgElement.remove(); // Or msgElement.style.display = 'none'; to hide it
 						// console.log(`Message ${messageId} removed.`);
 				}
-		}, 1000 * 60 * timeout); // in minutes
+		}, 1000 * timeout); // in minutes
 	}
 	
 }
