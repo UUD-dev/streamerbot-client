@@ -361,7 +361,7 @@ function deleteMessage(msgId, timeout){
 						msgElement.remove(); // Or msgElement.style.display = 'none'; to hide it
 						// console.log(`Message ${messageId} removed.`);
 				}
-		}, 1000 * timeout); // in minutes
+		}, 1000 * timeout); // in seconds
 	}
 	
 }
@@ -381,3 +381,4 @@ function generateMessageId() {
 	
 	return hexColor;
 }
+
