@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@streamerbot/client": "^1.12.2"
+  }
+}
